@@ -37,5 +37,7 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
+  $contact->cc = array('call@mrstraiber.me');
+  $contact->bcc = array('call@mrstraiber.me');
   echo $contact->send();
 ?>
